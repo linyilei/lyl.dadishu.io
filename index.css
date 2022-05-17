@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+p{
+    position: absolute;
+    left: 0;
+    top: 100px;
+    display: inline-block;
+    background-color: rgba(0,0,0,0.5);
+    font-size: 50px;
+    padding-right: 1em;
+    color: white;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+section {
+  display: flex;
+  width: min-content;
+  width: 100%;
+}
+
+body {
+  background-image: url("imgs/bg.jpg");
+}
+
+img {
+  width: 70%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  right: 0;
+  margin: auto;
+  height: 0px;
+  background-size: 100%;
+}
+
+div {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  flex: 1;
+  /*设置为行内块标签，它们可以共处一行，而且可以改变宽高*/
+  /*display: inline-block;*/
+  /*float它会破坏文档流，使元素向左浮动，所占的空间最小*/
+  /*float: left;*/
+  background-image: url(imgs/hole.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  /*当只设置了y轴方向的参数时，浏览器会自动解析x轴方向的参数为center*/
+  background-position: bottom;
+  /* text-align: center; */
+  /*必须用在display: table-cell的元素当中*/
+}
